@@ -40,7 +40,7 @@ end
 use Rack::Session::Cookie
 
 use OmniAuth::Builder do
-  provider :agsquared, ENV['AGSQUARED_CONSUMER_KEY'], ENV['AGSQUARED_CONSUMER_SECRET']
+  provider OmniAuth::Strategies::AgsquaredOauth2, ENV['AGSQUARED_CONSUMER_KEY'], ENV['AGSQUARED_CONSUMER_SECRET'], :scope => "farmersWeb"
 end
 
 run App.new
