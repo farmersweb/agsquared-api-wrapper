@@ -1,0 +1,49 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: http://api.agsquared.com/v1/me
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      User-Agent:
+      - Faraday v0.15.1
+      Authorization:
+      - OAuth oauth_consumer_key="", oauth_nonce="6302b561730f983e1578f7123ecbee2b",
+        oauth_signature="GmxWLrQ3asr4BlXi6aBaijt65Ns%3D", oauth_signature_method="HMAC-SHA1",
+        oauth_timestamp="1526505131", oauth_token="", oauth_version="1.0"
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 301
+      message: Moved Permanently
+    headers:
+      Date:
+      - Wed, 16 May 2018 21:12:11 GMT
+      Server:
+      - Apache/2.4.6 (CentOS)
+      Location:
+      - http://www.agsquared.com/
+      Content-Length:
+      - '315'
+      Content-Type:
+      - text/html; charset=iso-8859-1
+    body:
+      encoding: UTF-8
+      string: |
+        <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+        <html><head>
+        <title>301 Moved Permanently</title>
+        </head><body>
+        <h1>Moved Permanently</h1>
+        <p>The document has moved <a href="http://www.agsquared.com/">here</a>.</p>
+        <hr>
+        <address>Apache/2.4.6 (CentOS) Server at api.agsquared.com Port 80</address>
+        </body></html>
+    http_version: 
+  recorded_at: Wed, 16 May 2018 21:12:11 GMT
+recorded_with: VCR 4.0.0
