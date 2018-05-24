@@ -8,8 +8,8 @@ module AgsquaredApiWrapper
       {
         consumer_key: @consumer_token,
         consumer_secret: @consumer_secret,
-        token: @oauth_token,
-        token_secret: @oauth_secret
+        token: @access_token, 
+        refresh_token: @refresh_token
       }
     end
     
@@ -26,6 +26,7 @@ module AgsquaredApiWrapper
         builder.use Faraday::Response::RaiseAgsquaredApiError
         builder.request :json
         builder.request :oauth, oauth_data
+        builder.authorization :Bearer, oauth_data[:token]
         unless raw
           builder.use FaradayMiddleware::Mashify
           builder.use FaradayMiddleware::ParseJson

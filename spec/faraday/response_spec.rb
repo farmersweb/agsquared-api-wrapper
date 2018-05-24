@@ -6,8 +6,8 @@ describe Faraday::Response do
     @client = AgsquaredApiWrapper::Client.new({
       consumer_token: ENV['AGSQUARED_CONSUMER_TOKEN'], 
       consumer_secret: ENV['AGSQUARED_CONSUMER_SECRET'], 
-      oauth_token: ENV['AGSQUARED_OAUTH_TOKEN'], 
-      oauth_secret: ENV['AGSQUARED_OAUTH_SECRET'], 
+      access_token: ENV['AGSQUARED_ACCESS_TOKEN'],
+      refresh_token: ENV['AGSQUARED_REFRESH_TOKEN']
       proxy: 'http://localhost:8888'
     })
   end

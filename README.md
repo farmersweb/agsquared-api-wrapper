@@ -18,8 +18,7 @@ Then instantiate the client using the oAuth tokens (this example implies using F
 AgsquaredApiClient::Client.new({
   consumer_token: ENV['AGSQUARED_CONSUMER_TOKEN'], 
   consumer_secret: ENV['AGSQUARED_CONSUMER_SECRET'], 
-  oauth_token: ENV['AGSQUARED_OAUTH_TOKEN'], 
-  oauth_secret: ENV['AGSQUARED_OAUTH_SECRET']
+  access_token: ENV['AGSQUARED_OAUTH_TOKEN']
 })
 ```
 
@@ -34,8 +33,7 @@ get '/auth/:provider/callback' do
   client = AgsquaredApiClient::Client.new({
     consumer_token: ENV['AGSQUARED_CONSUMER_KEY'], 
     consumer_secret: ENV['AGSQUARED_CONSUMER_SECRET'], 
-    oauth_token: auth.credentials.token, 
-    oauth_secret: auth.credentials.secret
+    access_token: auth.credentials.token
   })
   
   products = client.products
@@ -55,8 +53,7 @@ Note that rspec is using vcr for fixtures. If you delete files from spec/fixture
 ```ruby
 	AGSQUARED_CONSUMER_TOKEN='your consumer token from AgSquared'
 	AGSQUARED_CONSUMER_SECRET='your consumer secret from AgSquared'
-	AGSQUARED_OAUTH_TOKEN='OAuth token that are returned from a successful authentication'
-	AGSQUARED_OAUTH_SECRET='OAuth secret that are returned from a successful authentication'
+	AGSQUARED_ACCESS_TOKEN='OAuth token that are returned from a successful authentication'
 ```
 
 From there, you can run _foreman run bundle exec rake_ to regenerate the cassettes using live data in conjunction with your credentials. Just a word of warning: don't commit those cassettes to a public repo, as they will contain valid tokens that could potentially be used to hijack a live application that uses those credentials.

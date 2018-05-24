@@ -12,15 +12,15 @@ module AgsquaredApiWrapper
       :consumer_token,
       :consumer_secret,
       :consumer_options,
-      :oauth_token,
-      :oauth_secret,
+      :access_token,
+      :refresh_token,
       :response_format,
       :user_agent].freeze
 
     DEFAULT_ADAPTER = Faraday.default_adapter
     DEFAULT_API_VERSION = 'v1'
-    DEFAULT_API_ENDPOINT = 'http://api.agsquared.com/'
-    DEFAULT_WEB_ENDPOINT = 'http://www.agsquared.com/'
+    DEFAULT_API_ENDPOINT = 'https://api.agsquared.com/'
+    DEFAULT_WEB_ENDPOINT = 'https://www.agsquared.com/'
     DEFAULT_USER_AGENT = "AgsquaredApiWrapper Rubygem #{AgsquaredApiWrapper::VERSION}".freeze
     DEFAULT_RESPONSE_FORMAT = 'json'
 
@@ -54,8 +54,7 @@ module AgsquaredApiWrapper
       self.proxy = nil
       self.consumer_token = nil
       self.consumer_secret = nil
-      self.oauth_token = nil
-      self.oauth_secret = nil
+      self.refresh_token = nil
       self.response_format = DEFAULT_RESPONSE_FORMAT
       self.user_agent = DEFAULT_USER_AGENT
     end

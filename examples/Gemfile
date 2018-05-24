@@ -2,5 +2,8 @@ source 'https://rubygems.org'
 
 gem 'sinatra'
 gem 'multi_json'
-gem "omniauth-agsquared-oauth2", :git => "git@github.com:farmersweb/omniauth-agsquared-oauth2.git", :branch => "master", :ref => "cbc5816403a17536535957018e554a4e67df882f"
-gem 'agsquared-api-wrapper', :git => "git@github.com:farmersweb/agsquared-api-wrapper.git", :branch => "master", :ref => "9ff70b2aae82c7ce91721b69ad6a2d43aa57751d"
+#gem 'omniauth-agsquared-oauth2', :git => 'git@github.com:farmersweb/omniauth-agsquared-oauth2.git', :branch => 'master', :ref => 'cbc5816403a17536535957018e554a4e67df882f'
+gem 'omniauth-agsquared-oauth2', :path => '/Users/barton/projects/farmersweb/omniauth-agsquared-oauth2/'
+#gem 'agsquared-api-wrapper', :git => 'git@github.com:farmersweb/agsquared-api-wrapper.git', :branch => 'master', :ref => '9ff70b2aae82c7ce91721b69ad6a2d43aa57751d'
+gem 'agsquared-api-wrapper', :path => '/Users/barton/projects/farmersweb/agsquared-api-wrapper/'
+gem 'awesome_print'
