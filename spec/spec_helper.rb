@@ -9,6 +9,8 @@ require 'agsquared-api-wrapper'
 require 'rspec'
 require 'webmock/rspec'
 require 'vcr'
+require 'dotenv'
+Dotenv.load('.env')
 
 VCR.configure do |c|
   c.cassette_library_dir = 'spec/fixtures/cassettes'

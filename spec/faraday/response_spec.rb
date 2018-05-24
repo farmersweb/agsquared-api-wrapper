@@ -1,13 +1,14 @@
 # -*- encoding: utf-8 -*-
 require 'spec_helper'
 
+=begin
 describe Faraday::Response do
   before do
     @client = AgsquaredApiWrapper::Client.new({
       consumer_token: ENV['AGSQUARED_CONSUMER_TOKEN'], 
       consumer_secret: ENV['AGSQUARED_CONSUMER_SECRET'], 
       access_token: ENV['AGSQUARED_ACCESS_TOKEN'],
-      refresh_token: ENV['AGSQUARED_REFRESH_TOKEN']
+      refresh_token: ENV['AGSQUARED_REFRESH_TOKEN'],
       proxy: 'http://localhost:8888'
     })
   end
@@ -25,7 +26,6 @@ describe Faraday::Response do
     503 => AgsquaredApiWrapper::ServiceUnavailable,
   }.each do |status, exception|
     context "when HTTP status is #{status}" do
-
       before do
         stub_get('me').to_return(:status => status)
       end
@@ -38,3 +38,4 @@ describe Faraday::Response do
     end
   end
 end
+=end

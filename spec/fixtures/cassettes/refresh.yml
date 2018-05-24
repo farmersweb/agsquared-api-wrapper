@@ -1,0 +1,46 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.agsquared.com/v1/oauth2/token
+    body:
+      encoding: UTF-8
+      string: '{"grant_type":"refresh_token","client_id":"farmersweb","client_secret":"jyk0seaacpwwog4cgs0s0gw00k8wcg8","refresh_token":"f2eacb97a28d505b2b0d1200924faf64ecd88557","scope":"farmersWeb"}'
+    headers:
+      Authorization:
+      - Bearer 406ccd07b41cba477a15d3ced539248c9c993fe6
+      User-Agent:
+      - Faraday v0.15.1
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Thu, 24 May 2018 15:33:06 GMT
+      Server:
+      - Apache/2.4.6 (CentOS)
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - PHP/5.4.16
+      Cache-Control:
+      - no-cache
+      X-From:
+      - IngewikkeldBundle
+      Content-Length:
+      - '124'
+      Content-Type:
+      - text/html; charset=utf-8
+    body:
+      encoding: ASCII-8BIT
+      string: '{"access_token":"458dd516d44662bd775588feb6d72156a9809070","expires_in":3600,"token_type":"Bearer","scope":"farmersWeb"}'
+    http_version: 
+  recorded_at: Thu, 24 May 2018 15:33:06 GMT
+recorded_with: VCR 4.0.0
