@@ -2,14 +2,14 @@ module AgsquaredApiWrapper
   class Client
     module Farm
 
-      def products(farm_id, options={}, raw=false)
-        get("/#{api_version}/farm/#{farm_id}/farmersWeb/products", options, raw)
+      def products(options={}, raw=false)
+        get("/#{api_version}/farm/#{uid}/farmersWeb/products", options, raw)
       end
 
-      def plantings(farm_id, options={}, raw=false)
-        get("/#{api_version}/farm/#{farm_id}/farmersWeb/plantings", options, raw)
+      def plantings(options={}, raw=false)
+        get("/#{api_version}/farm/#{uid}/farmersWeb/plantings", options, raw)
       end
-      
+
     end
   end
 end

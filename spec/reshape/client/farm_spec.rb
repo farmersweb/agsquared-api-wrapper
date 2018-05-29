@@ -11,7 +11,7 @@ describe AgsquaredApiWrapper::Client::Farm do
 
   it "should return farm-specific product info in json" do
     VCR.use_cassette('products') do
-      response = client.products(9474)
+      response = client.products
       expect(response).to be_an_instance_of(Hashie::Mash)
       expect(response['products'][0]['id']).to eq "150627"
     end
@@ -19,7 +19,7 @@ describe AgsquaredApiWrapper::Client::Farm do
 
   it "should return farm-specific plantings info in json" do
     VCR.use_cassette('plantings') do
-      response = client.plantings(9474)
+      response = client.plantings
       expect(response).to be_an_instance_of(Hashie::Mash)
       expect(response['plantings'][0]['id']).to eq "377847"
     end

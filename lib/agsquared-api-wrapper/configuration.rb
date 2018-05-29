@@ -14,6 +14,7 @@ module AgsquaredApiWrapper
       :consumer_options,
       :access_token,
       :refresh_token,
+      :uid,
       :response_format,
       :user_agent].freeze
 
@@ -55,6 +56,7 @@ module AgsquaredApiWrapper
       self.consumer_token = nil
       self.consumer_secret = nil
       self.refresh_token = nil
+      self.uid = nil
       self.response_format = DEFAULT_RESPONSE_FORMAT
       self.user_agent = DEFAULT_USER_AGENT
     end
