@@ -4,8 +4,8 @@ require 'omniauth-agsquared-oauth2'
 require 'agsquared-api-wrapper'
 require 'awesome_print'
 
-ENV['AGSQUARED_CONSUMER_KEY'] = 'farmersweb'
-ENV['AGSQUARED_CONSUMER_SECRET'] = 'jyk0seaacpwwog4cgs0s0gw00k8wcg8'
+ENV['AGSQUARED_CONSUMER_KEY'] = ''
+ENV['AGSQUARED_CONSUMER_SECRET'] = ''
 
 # To run this example:
 # $ bundle install
