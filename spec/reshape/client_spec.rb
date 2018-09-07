@@ -33,9 +33,9 @@ describe AgsquaredApiWrapper::Client do
       AgsquaredApiWrapper.reset
     end
 
-    it "should default to https://www.agsquared.com/" do
+    it "should default to https://app.agsquared.com/" do
       client = AgsquaredApiWrapper::Client.new
-      expect(client.web_endpoint).to eq 'https://www.agsquared.com/'
+      expect(client.web_endpoint).to eq 'https://app.agsquared.com/'
     end
 
     it "should be set " do

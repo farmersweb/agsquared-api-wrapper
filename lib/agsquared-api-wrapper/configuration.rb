@@ -21,7 +21,7 @@ module AgsquaredApiWrapper
     DEFAULT_ADAPTER = Faraday.default_adapter
     DEFAULT_API_VERSION = 'v1'
     DEFAULT_API_ENDPOINT = 'https://api.agsquared.com/'
-    DEFAULT_WEB_ENDPOINT = 'https://www.agsquared.com/'
+    DEFAULT_WEB_ENDPOINT = 'https://app.agsquared.com/'
     DEFAULT_USER_AGENT = "AgsquaredApiWrapper Rubygem #{AgsquaredApiWrapper::VERSION}".freeze
     DEFAULT_RESPONSE_FORMAT = 'json'
 
