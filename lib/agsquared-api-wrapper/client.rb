@@ -4,6 +4,7 @@ require 'agsquared-api-wrapper/request'
 require 'agsquared-api-wrapper/error'
 require 'agsquared-api-wrapper/client/me'
 require 'agsquared-api-wrapper/client/farm'
+require 'agsquared-api-wrapper/client/harvest_order'
 require 'agsquared-api-wrapper/client/refresh'
 
 module AgsquaredApiWrapper
@@ -22,6 +23,7 @@ module AgsquaredApiWrapper
     include AgsquaredApiWrapper::Request
     include AgsquaredApiWrapper::Client::Me
     include AgsquaredApiWrapper::Client::Farm
+    include AgsquaredApiWrapper::Client::HarvestOrder
     include AgsquaredApiWrapper::Client::Refresh
   end
 end
