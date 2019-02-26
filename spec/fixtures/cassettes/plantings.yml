@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       Authorization:
-      - Bearer 02eb2daf3e93add313b2892b37df7e40712f336d
+      - Bearer 247dc6a317d9841943ba3fb0aaba80cea23beaae
       User-Agent:
       - Faraday v0.15.4
       Accept-Encoding:
@@ -21,7 +21,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 26 Feb 2019 17:33:25 GMT
+      - Tue, 26 Feb 2019 21:29:02 GMT
       Server:
       - Apache/2.4.6 (CentOS)
       Vary:
@@ -44,5 +44,5 @@ http_interactions:
         Barley","total_area":null,"total_area_unit":null,"last_location":null,"sowing_date":"2019-06-01","expected_harvested":null,"expected_harvested_unit":null,"begin_harvest":"2019-07-16","end_harvest":"2019-07-21"},{"id":"378243","variety":"Saaz","crop":"Saaz
         Hops","total_area":null,"total_area_unit":"Square feet","last_location":null,"sowing_date":"2019-05-15","expected_harvested":"90.000000","expected_harvested_unit":"pounds","begin_harvest":"2019-07-04","end_harvest":"2019-07-07"}]}'
     http_version: 
-  recorded_at: Tue, 26 Feb 2019 17:33:25 GMT
+  recorded_at: Tue, 26 Feb 2019 21:29:02 GMT
 recorded_with: VCR 4.0.0

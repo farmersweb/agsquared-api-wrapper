@@ -10,6 +10,7 @@ require 'rspec'
 require 'webmock/rspec'
 require 'vcr'
 require 'dotenv'
+require 'awesome_print'
 Dotenv.load('.env')
 
 VCR.configure do |c|
@@ -69,7 +70,7 @@ def agsquared_client
     consumer_secret: ENV['AGSQUARED_CONSUMER_SECRET'], 
     access_token: ENV['AGSQUARED_ACCESS_TOKEN'], 
     refresh_token: ENV['AGSQUARED_REFRESH_TOKEN'], 
-    farm_id: ENV['AGSQUARED_FARM_ID'],
-    business_unit_id: ENV['AGSQUARED_BUSINESS_UNIT_ID']
+    uid: ENV['AGSQUARED_UID'],
+    subscription_id: ENV['AGSQUARED_SUBSCRIPTION_ID']
   })
 end
