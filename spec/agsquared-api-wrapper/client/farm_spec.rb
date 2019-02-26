@@ -13,7 +13,7 @@ describe AgsquaredApiWrapper::Client::Farm do
     VCR.use_cassette('products') do
       response = client.products
       expect(response).to be_an_instance_of(Hashie::Mash)
-      expect(response['products'][0]['id']).to eq "150627"
+      expect(response['products'][0]['id']).to eq "152438"
     end
   end 
 

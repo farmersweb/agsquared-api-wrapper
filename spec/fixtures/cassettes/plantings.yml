@@ -8,9 +8,9 @@ http_interactions:
       string: ''
     headers:
       Authorization:
-      - Bearer 406ccd07b41cba477a15d3ced539248c9c993fe6
+      - Bearer 02eb2daf3e93add313b2892b37df7e40712f336d
       User-Agent:
-      - Faraday v0.15.1
+      - Faraday v0.15.4
       Accept-Encoding:
       - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
       Accept:
@@ -21,7 +21,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Thu, 24 May 2018 15:23:39 GMT
+      - Tue, 26 Feb 2019 17:33:25 GMT
       Server:
       - Apache/2.4.6 (CentOS)
       Vary:
@@ -33,12 +33,16 @@ http_interactions:
       X-From:
       - IngewikkeldBundle
       Content-Length:
-      - '180'
+      - '313'
       Content-Type:
       - application/json
     body:
       encoding: ASCII-8BIT
-      string: '{"plantings":[{"id":"377847","variety":"Pinnacle","crop":"6-Row Barley","total_area":null,"total_area_unit":null,"last_location":null,"sowing_date":"2018-05-21","expected_harvested":null,"expected_harvested_unit":null,"begin_harvest":"2018-07-05","end_harvest":"2018-07-07"}]}'
+      string: '{"plantings":[{"id":"377847","variety":"Pinnacle","crop":"6-Row Barley","total_area":null,"total_area_unit":"Square
+        feet","last_location":null,"sowing_date":"2019-05-21","expected_harvested":"90.000000","expected_harvested_unit":"bushels","begin_harvest":"2019-07-05","end_harvest":"2019-07-07"},{"id":"377889","variety":"Rasmusson","crop":"2-Row
+        Barley","total_area":null,"total_area_unit":"Square feet","last_location":null,"sowing_date":"2019-05-28","expected_harvested":"1000.000000","expected_harvested_unit":"bushels","begin_harvest":"2019-07-26","end_harvest":"2019-08-02"},{"id":"378095","variety":"Rasmusson","crop":"2-Row
+        Barley","total_area":null,"total_area_unit":null,"last_location":null,"sowing_date":"2019-06-01","expected_harvested":null,"expected_harvested_unit":null,"begin_harvest":"2019-07-16","end_harvest":"2019-07-21"},{"id":"378243","variety":"Saaz","crop":"Saaz
+        Hops","total_area":null,"total_area_unit":"Square feet","last_location":null,"sowing_date":"2019-05-15","expected_harvested":"90.000000","expected_harvested_unit":"pounds","begin_harvest":"2019-07-04","end_harvest":"2019-07-07"}]}'
     http_version: 
-  recorded_at: Thu, 24 May 2018 15:23:39 GMT
+  recorded_at: Tue, 26 Feb 2019 17:33:25 GMT
 recorded_with: VCR 4.0.0

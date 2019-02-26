@@ -69,6 +69,7 @@ def agsquared_client
     consumer_secret: ENV['AGSQUARED_CONSUMER_SECRET'], 
     access_token: ENV['AGSQUARED_ACCESS_TOKEN'], 
     refresh_token: ENV['AGSQUARED_REFRESH_TOKEN'], 
-    uid: ENV['AGSQUARED_UID']
+    farm_id: ENV['AGSQUARED_FARM_ID'],
+    business_unit_id: ENV['AGSQUARED_BUSINESS_UNIT_ID']
   })
 end

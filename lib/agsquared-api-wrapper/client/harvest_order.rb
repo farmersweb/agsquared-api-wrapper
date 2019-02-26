@@ -13,28 +13,28 @@ module AgsquaredApiWrapper
       # date - The date that the harvest order is expected to be harvested on
 
       def harvest_orders(options={}, raw=false)
-        get("/#{api_version}/business_unit/#{uid}/harvest_orders", options, raw)
+        get("/#{api_version}/business_unit/#{business_unit_id}/harvest_orders", options, raw)
       end
 
       def harvest_order(id, options={}, raw=false)
-        get("/#{api_version}/business_unit/#{uid}/harvest_orders/#{id}", options, raw)
+        get("/#{api_version}/business_unit/#{business_unit_id}/harvest_orders/#{id}", options, raw)
       end
 
       def add_harvest_order(options={}, raw=false)
-        options.merge!(
-          {
-            subscription_id: uid
-          })
+        #options.merge!(
+        #  {
+        #    subscription_id: business_unit_id
+        #  })
 
-        post("/#{api_version}/business_unit/#{uid}/harvest_orders", options, raw)
+        post("/#{api_version}/business_unit/#{business_unit_id}/harvest_orders", options, raw)
       end
 
       def update_harvest_order(id, options={}, raw=false)
-        put("/#{api_version}/business_unit/#{uid}/harvest_orders/#{id}", options, raw)
+        put("/#{api_version}/business_unit/#{business_unit_id}/harvest_orders/#{id}", options, raw)
       end
 
       def delete_harvest_order(id, options={}, raw=false)
-        delete("/#{api_version}/business_unit/#{uid}/harvest_orders/#{id}", options, raw)
+        delete("/#{api_version}/business_unit/#{business_unit_id}/harvest_orders/#{id}", options, raw)
       end
 
     end

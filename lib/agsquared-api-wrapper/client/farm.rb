@@ -3,15 +3,15 @@ module AgsquaredApiWrapper
     module Farm
 
       def products(options={}, raw=false)
-        get("/#{api_version}/farm/#{uid}/farmersWeb/products", options, raw)
+        get("/#{api_version}/farm/#{farm_id}/farmersWeb/products", options, raw)
       end
 
       def plantings(options={}, raw=false)
-        get("/#{api_version}/farm/#{uid}/farmersWeb/plantings", options, raw)
+        get("/#{api_version}/farm/#{farm_id}/farmersWeb/plantings", options, raw)
       end
 
       def crops(options={}, raw=false)
-        get("/#{api_version}/farm/#{uid}/farmersWeb/crops", options, raw)
+        get("/#{api_version}/farm/#{farm_id}/farmersWeb/crops", options, raw)
       end
 
     end
