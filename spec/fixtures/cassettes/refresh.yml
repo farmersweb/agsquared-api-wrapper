@@ -8,7 +8,7 @@ http_interactions:
       string: '{"grant_type":"refresh_token","client_id":"farmersweb","client_secret":"jyk0seaacpwwog4cgs0s0gw00k8wcg8","refresh_token":"1a159f46169c560a0e4f7cbc9972df6aad5afec8","scope":"farmersWeb"}'
     headers:
       Authorization:
-      - Bearer 247dc6a317d9841943ba3fb0aaba80cea23beaae
+      - Bearer 134fef9bfa4633472bd334758fdfd263d934b6aa
       User-Agent:
       - Faraday v0.15.4
       Content-Type:
@@ -23,7 +23,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 26 Feb 2019 21:29:03 GMT
+      - Wed, 27 Feb 2019 16:28:40 GMT
       Server:
       - Apache/2.4.6 (CentOS)
       Vary:
@@ -40,7 +40,7 @@ http_interactions:
       - text/html; charset=utf-8
     body:
       encoding: ASCII-8BIT
-      string: '{"access_token":"83536b5c00429c6165e87964aa2069491dcf6191","expires_in":3600,"token_type":"Bearer","scope":"farmersWeb"}'
+      string: '{"access_token":"3d84c5e681c4a01a55746c3561202c1d9e3472f0","expires_in":3600,"token_type":"Bearer","scope":"farmersWeb"}'
     http_version: 
-  recorded_at: Tue, 26 Feb 2019 21:29:03 GMT
+  recorded_at: Wed, 27 Feb 2019 16:28:40 GMT
 recorded_with: VCR 4.0.0

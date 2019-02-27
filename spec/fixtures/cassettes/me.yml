@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       Authorization:
-      - Bearer 247dc6a317d9841943ba3fb0aaba80cea23beaae
+      - Bearer 134fef9bfa4633472bd334758fdfd263d934b6aa
       User-Agent:
       - Faraday v0.15.4
       Accept-Encoding:
@@ -21,7 +21,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 26 Feb 2019 21:29:03 GMT
+      - Wed, 27 Feb 2019 16:28:40 GMT
       Server:
       - Apache/2.4.6 (CentOS)
       Vary:
@@ -43,5 +43,5 @@ http_interactions:
         Paltz","state":"New York","zipcode":"12561","subscription_id":"11512","links":{},"user_name":"John
         Barton","permissions":["Machine_link","Machine_manage","Supply_link","Supply_manage","Staff_link","Staff_manage","Harvest_manage","Purchase_manage","ActivityTemplate_link","ActivityTemplate_manage","ProductCategory_link","ProductCategory_manage","Product_link","Product_manage","Vendor_link","Vendor_manage","Report_manage","HarvestOrder_manage","Crop_link","Crop_manage","Location_link","Location_manage","Transplant_create"],"user_id":"11512","preferences":{"add_plantings_this_property":null,"allow_delete_activities":null,"allow_delete_plantings":null,"allow_delete_harvests":null,"allow_piecework":null,"allow_real_time_sync":null,"cleaning_happens_at_end":null,"create_transplant_from_mobile":null,"custom_cleaning_temlate":"","edit_transplant_date":"on","extra_languages":"","force_gps":null,"ignore_rei_phi":null,"hide_properties":null,"show_mobile_map":null,"show_punch_clock":null,"staff_name_prepend_id":null,"use_calendar":"on","use_crews":null,"use_cleaning":null,"use_harvests":"on","use_harvest_orders":null,"use_harvest_manager":null,"use_mmphha":null,"use_pause_time":null,"use_planting_module":"on","simplified_harvest":null,"use_target_harvest":null,"use_trailer_module":null,"use_work_orders":null},"machine_count":-10,"supply_count":-10,"staff_count":-10,"crop_count":-6,"planting_count":-4,"location_count":-7}]}'
     http_version: 
-  recorded_at: Tue, 26 Feb 2019 21:29:03 GMT
+  recorded_at: Wed, 27 Feb 2019 16:28:40 GMT
 recorded_with: VCR 4.0.0

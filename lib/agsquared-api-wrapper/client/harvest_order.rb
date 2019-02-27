@@ -21,13 +21,7 @@ module AgsquaredApiWrapper
       end
 
       def add_harvest_order(options={}, raw=false)
-        ap options
-
-        response = post("/#{api_version}/business_unit/#{subscription_id}/harvest_orders", options, raw)
-
-        ap response
-
-        response
+        post("/#{api_version}/business_unit/#{subscription_id}/harvest_orders", options, raw)
       end
 
       def update_harvest_order(id, options={}, raw=false)

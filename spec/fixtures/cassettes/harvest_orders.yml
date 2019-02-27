@@ -10,7 +10,7 @@ http_interactions:
         +00:00","product_id":157704,"subscription_id":11512}'
     headers:
       Authorization:
-      - Bearer 247dc6a317d9841943ba3fb0aaba80cea23beaae
+      - Bearer d6c01c7ae2defa8a8c9197efeec3ccbcd84fcf98
       User-Agent:
       - Faraday v0.15.4
       Content-Type:
@@ -21,26 +21,270 @@ http_interactions:
       - "*/*"
   response:
     status:
-      code: 500
-      message: Internal Server Error
+      code: 200
+      message: OK
     headers:
       Date:
-      - Tue, 26 Feb 2019 21:29:02 GMT
+      - Wed, 27 Feb 2019 19:32:55 GMT
       Server:
       - Apache/2.4.6 (CentOS)
       Vary:
       - Accept-Encoding
       X-Powered-By:
       - PHP/5.4.16
+      Cache-Control:
+      - no-cache
+      Content-Length:
+      - '204'
+      Content-Type:
+      - application/json
+    body:
+      encoding: ASCII-8BIT
+      string: '{"harvest_orders":{"id":"256","mobile_id":"","amount":1,"ref_num":44070,"product_id":"157704","subscription_id":"11512","sales_notes":null,"harvest_notes":"Grains
+        - 2-Row Barley - Rasmusson - 1.0 bag of 5  pounds","date":"2019-01-28","deleted_at":null}}'
+    http_version: 
+  recorded_at: Wed, 27 Feb 2019 19:32:55 GMT
+- request:
+    method: put
+    uri: https://api.agsquared.com/v1/business_unit/11512/harvest_orders/253
+    body:
+      encoding: UTF-8
+      string: '{"amount":5.0,"harvest_notes":"Grains - 2-Row Barley - Rasmusson -
+        1.0 bag of 5  pounds","ref_num":44070,"date":"Mon, 28 Jan 2019 05:00:00 UTC
+        +00:00","product_id":157704,"subscription_id":11512}'
+    headers:
+      Authorization:
+      - Bearer d6c01c7ae2defa8a8c9197efeec3ccbcd84fcf98
+      User-Agent:
+      - Faraday v0.15.4
+      Content-Type:
+      - application/json
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 27 Feb 2019 19:32:55 GMT
+      Server:
+      - Apache/2.4.6 (CentOS)
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - PHP/5.4.16
+      Cache-Control:
+      - no-cache
+      Content-Length:
+      - '204'
+      Content-Type:
+      - application/json
+    body:
+      encoding: ASCII-8BIT
+      string: '{"harvest_orders":{"id":"253","mobile_id":"","amount":5,"ref_num":44070,"product_id":"157704","subscription_id":"11512","sales_notes":null,"harvest_notes":"Grains
+        - 2-Row Barley - Rasmusson - 1.0 bag of 5  pounds","date":"2019-01-28","deleted_at":null}}'
+    http_version: 
+  recorded_at: Wed, 27 Feb 2019 19:32:55 GMT
+- request:
+    method: delete
+    uri: https://api.agsquared.com/v1/business_unit/11512/harvest_orders/254
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer d6c01c7ae2defa8a8c9197efeec3ccbcd84fcf98
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Date:
+      - Wed, 27 Feb 2019 19:32:55 GMT
+      Server:
+      - Apache/2.4.6 (CentOS)
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - PHP/5.4.16
+      Cache-Control:
+      - no-cache
       Content-Length:
       - '20'
-      Connection:
-      - close
       Content-Type:
       - text/html; charset=UTF-8
     body:
       encoding: ASCII-8BIT
       string: ''
     http_version: 
-  recorded_at: Tue, 26 Feb 2019 21:29:03 GMT
+  recorded_at: Wed, 27 Feb 2019 19:32:55 GMT
+- request:
+    method: get
+    uri: https://api.agsquared.com/v1/business_unit/11512/harvest_orders
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer d6c01c7ae2defa8a8c9197efeec3ccbcd84fcf98
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 27 Feb 2019 19:32:55 GMT
+      Server:
+      - Apache/2.4.6 (CentOS)
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - PHP/5.4.16
+      Cache-Control:
+      - no-cache
+      Content-Length:
+      - '226'
+      Content-Type:
+      - application/json
+    body:
+      encoding: ASCII-8BIT
+      string: '{"harvest_orders":[{"id":"253","mobile_id":"","amount":"5.00","ref_num":"44070","product_id":"157704","subscription_id":"11512","sales_notes":null,"harvest_notes":"Grains
+        - 2-Row Barley - Rasmusson - 1.0 bag of 5  pounds","date":"2019-01-28","deleted_at":null},{"id":"255","mobile_id":"","amount":"1.00","ref_num":"44070","product_id":"157704","subscription_id":"11512","sales_notes":null,"harvest_notes":"Grains
+        - 2-Row Barley - Rasmusson - 1.0 bag of 5  pounds","date":"2019-01-28","deleted_at":null},{"id":"256","mobile_id":"","amount":"1.00","ref_num":"44070","product_id":"157704","subscription_id":"11512","sales_notes":null,"harvest_notes":"Grains
+        - 2-Row Barley - Rasmusson - 1.0 bag of 5  pounds","date":"2019-01-28","deleted_at":null}]}'
+    http_version: 
+  recorded_at: Wed, 27 Feb 2019 19:32:55 GMT
+- request:
+    method: get
+    uri: https://api.agsquared.com/v1/business_unit/11512/harvest_orders/252
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer d6c01c7ae2defa8a8c9197efeec3ccbcd84fcf98
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 404
+      message: Not Found
+    headers:
+      Date:
+      - Wed, 27 Feb 2019 19:32:55 GMT
+      Server:
+      - Apache/2.4.6 (CentOS)
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - PHP/5.4.16
+      Cache-Control:
+      - no-cache
+      Content-Length:
+      - '20'
+      Content-Type:
+      - text/html; charset=UTF-8
+    body:
+      encoding: ASCII-8BIT
+      string: ''
+    http_version: 
+  recorded_at: Wed, 27 Feb 2019 19:32:55 GMT
+- request:
+    method: delete
+    uri: https://api.agsquared.com/v1/business_unit/11512/harvest_orders/256
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer d6c01c7ae2defa8a8c9197efeec3ccbcd84fcf98
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 27 Feb 2019 19:38:12 GMT
+      Server:
+      - Apache/2.4.6 (CentOS)
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - PHP/5.4.16
+      Cache-Control:
+      - no-cache
+      Content-Length:
+      - '129'
+      Content-Type:
+      - application/json
+    body:
+      encoding: ASCII-8BIT
+      string: '{"harvest_orders":[{"id":"256","deleted_at":{"date":"2019-02-27 14:38:12","timezone_type":3,"timezone":"America\/New_York"}}]}'
+    http_version: 
+  recorded_at: Wed, 27 Feb 2019 19:38:12 GMT
+- request:
+    method: get
+    uri: https://api.agsquared.com/v1/business_unit/11512/harvest_orders/253
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - Bearer d6c01c7ae2defa8a8c9197efeec3ccbcd84fcf98
+      User-Agent:
+      - Faraday v0.15.4
+      Accept-Encoding:
+      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
+      Accept:
+      - "*/*"
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Date:
+      - Wed, 27 Feb 2019 19:39:11 GMT
+      Server:
+      - Apache/2.4.6 (CentOS)
+      Vary:
+      - Accept-Encoding
+      X-Powered-By:
+      - PHP/5.4.16
+      Cache-Control:
+      - no-cache
+      Content-Length:
+      - '206'
+      Content-Type:
+      - application/json
+    body:
+      encoding: ASCII-8BIT
+      string: '{"harvest_orders":{"id":"253","mobile_id":"","amount":"5.00","ref_num":"44070","product_id":"157704","subscription_id":"11512","sales_notes":null,"harvest_notes":"Grains
+        - 2-Row Barley - Rasmusson - 1.0 bag of 5  pounds","date":"2019-01-28","deleted_at":null}}'
+    http_version: 
+  recorded_at: Wed, 27 Feb 2019 19:39:11 GMT
 recorded_with: VCR 4.0.0

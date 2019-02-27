@@ -8,7 +8,7 @@ http_interactions:
       string: ''
     headers:
       Authorization:
-      - Bearer 247dc6a317d9841943ba3fb0aaba80cea23beaae
+      - Bearer 134fef9bfa4633472bd334758fdfd263d934b6aa
       User-Agent:
       - Faraday v0.15.4
       Accept-Encoding:
@@ -21,7 +21,7 @@ http_interactions:
       message: OK
     headers:
       Date:
-      - Tue, 26 Feb 2019 21:29:01 GMT
+      - Wed, 27 Feb 2019 16:28:39 GMT
       Server:
       - Apache/2.4.6 (CentOS)
       Vary:
@@ -43,5 +43,5 @@ http_interactions:
         Barley"},{"id":"157705","product":"Pounds","category":"Saaz Hops","crop_name":"Saaz
         Hops"},{"id":"295690","product":"Ounces","category":"AK-47","crop_name":"AK-47"}]}'
     http_version: 
-  recorded_at: Tue, 26 Feb 2019 21:29:02 GMT
+  recorded_at: Wed, 27 Feb 2019 16:28:39 GMT
 recorded_with: VCR 4.0.0

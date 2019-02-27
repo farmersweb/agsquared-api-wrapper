@@ -13,7 +13,7 @@ describe AgsquaredApiWrapper::Client::Me do
     VCR.use_cassette('refresh') do
       response = client.refresh!
       expect(response).to be_an_instance_of(Hashie::Mash)
-      expect(response['access_token']).to eq "41fe7142fbc051119f5d84ccb8170c998b2a9b99"
+      expect(response['access_token']).to eq "3d84c5e681c4a01a55746c3561202c1d9e3472f0"
     end
   end 
   
